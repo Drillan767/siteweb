@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d8c0b99f-b192-45e2-bd0c-b134129c1447" name="VPS" url="http://51.254.37.141">
+        <fileTransfer host="51.254.37.141" port="22" accessType="SFTP" password="dfe4dfdedfc1dfc1dfd3dfc5dfe5df92" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= titre %></title>
+  <!-- CSS généraux -->
+  <%= stylesheet_link_tag 'bootstrap', 'bootstrap-responsive', 'custom', 'cv', media: 'all' %>
+  <!-- Icones -->
+  <%= stylesheet_link_tag 'general/stylesheets/general_foundicons', 'social/stylesheets/social_foundicons' %>
+  <!-- CSS Polices d'écriture -->
+  <%=stylesheet_link_tag "http://fonts.googleapis.com/css?family=Chewy", "http://fonts.googleapis.com/css?family=Abel",
+                         "http://fonts.googleapis.com/css?family=Terminal+Dosis+Light", "http://fonts.googleapis.com/css?family=Maven+Pro" %>
+  <meta name="description" content="">
+  <meta name="author" content="Joseph Levarato">
+
+  <%= csrf_meta_tags %>
+</head>
+<body id="pageBody">
+
+<div id="divBoxed" class="container">
+  <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+  <div class="divPanel notop nobottom">
+
+    <!-- Logo de la page, modifier liens -->
+
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div id="divLogo">
+          <%=link_to 'Easy Start', '/', id: 'divSiteTitle' %><br />
+          <%=link_to 'Clean HTML5 Template..', '/', id: 'divTagLine' %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fin logo -->
+    <!-- Début menus au dessus, pareil, à modifier-->
+
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div id="divMenuRight" class="pull-right">
+          <div class="navbar">
+            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+              NAVIGATION <span class="icon-chevron-down icon-white"></span>
+            </button>
+            <div class="nav-collapse collapse">
+              <ul class="nav nav-pills ddmenu">
+                <li class="dropdown"> <%=link_to 'Accueil', '/'%></li>
+                <li class="dropdown"> <%=link_to 'À Propos', '/about'%></li>
+                <li class="dropdown"> <%=link_to 'Contact', '/contact'%></li>
+                <li class="dropdown"> <%=link_to 'CV', '/CVJosephLevarato.pdf'%></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Fin menus -->
+
+
+
+    <%= yield %>
+    </div>
+
+
+  <!-- Footer -->
+
+  <div id="footerOuterSeparator"></div>
+  <div id="divFooter" class="footerArea">
+
+    <div class="divPanel">
+
+      <div class="row-fluid">
+        <div class="span4" id="footerArea1">
+
+          <h3>About Company</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+
+          <p>
+            <a href="#" title="Terms of Use">Terms of Use</a><br />
+            <a href="#" title="Privacy Policy">Privacy Policy</a><br />
+            <a href="#" title="FAQ">FAQ</a><br />
+            <a href="#" title="Sitemap">Sitemap</a>
+          </p>
+
+        </div>
+
+        <div class="span4" id="footerArea3">
+
+          <h3>Sample Footer Content</h3>
+          <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+
+        </div>
+        <div class="span4" id="footerArea4">
+
+          <h3>Get in Touch</h3>
+
+          <ul id="contact-info">
+            <li>
+              <i class="general foundicon-phone icon"></i>
+              <span class="field">Téléphone :</span>
+              <br />
+              06 75 56 62 62
+            </li>
+            <li>
+              <i class="general foundicon-mail icon"></i>
+              <span class="field">Email :</span>
+              <br />
+              <a href="mailto:info@yourdomain.com" title="Email">jd.levarato@gmail.com</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="row-fluid">
+        <div class="span12">
+          <p class="copyright">
+            Copyright © 2016 Joseph Levarato. Tout droit réservé. Thanks to <a href="http://www.oswt.co.uk/">oswt</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Chargement du javascript -->
+<%= javascript_include_tag 'jquery', 'bootstrap', 'default'  %>
+<!-- Chargement de 'camera' -->
+<%= javascript_include_tag 'camera/scripts/camera.min','camera/scripts/jquery.mobile.customized.min', 'jquery.easing' %>
+<script type="text/javascript">function startCamera() {$('#camera_wrap').camera({ fx: 'scrollLeft', time: 2000, loader: 'none', playPause: false, height: '65%', pagination: true });}$(function(){startCamera()});</script>
+
+</body>
+</html>
+
