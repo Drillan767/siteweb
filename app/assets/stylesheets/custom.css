@@ -157,7 +157,7 @@ body{ background-color: rgb(31,31,31); background-repeat: repeat repeat;}
 
 #divSiteTitle{font-family: Chewy; font-size: 34px; line-height: 50px; color: rgb(212, 50, 32); text-shadow: none; letter-spacing: 4px; font-weight: bold; font-style: normal; text-transform: uppercase;}
 
-#divTagLine{color: rgb(150, 150, 150); line-height: 22px; text-transform: lowercase; letter-spacing: 4px; font-size: 13px; padding-left: 2px; padding-right: 2px; background-color: transparent; text-shadow: none; font-family: Abel; font-weight: normal; font-style: normal; text-decoration: initial;}
+#divTagLine{color: rgb(150, 150, 150); line-height: 22px; letter-spacing: 4px; font-size: 22px; padding-left: 2px; padding-right: 2px; background-color: transparent; text-shadow: none; font-family: Abel; font-weight: normal; font-style: normal; text-decoration: initial;}
 
 .navContainer {}
 
