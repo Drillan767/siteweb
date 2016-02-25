@@ -1,9 +1,9 @@
 
   <div class="col-md-5 col-md-offset-2 info">
     <h1>Joseph Levarato</h1>
-    <p>jd.levarato@gmail.com<br />
+    <p><%=link_to("jd.levarato@gmail.com", "mailto:jd.levarato@gmail.com", class: 'link-red') %><br />
     17, Boulevard Yves Farges - 69007 Lyon <br />
-    06 75 56 62 62</p>
+    <%link_to("06 75 56 62 62", "tel:06.75.56.62.62", class:'link-red') %></p>
   </div>
 
   <div class="col-md-3 photo">
@@ -15,7 +15,7 @@
   </div>
 
   <div class="col-md-5 col-md-offset-2">
-    <h3 class="small-title">EXPERIENCE PROFESSIONNELLE</h3>
+    <h3 class="small-title">EXPERIENCES PROFESSIONNELLES</h3>
     <dl class="dl-horizontal">
       <dt class="year">2015</dt>
       <dd><p class="topic">Avril à Juillet <b>- Audience Labs -</b> <i>Intégrateur web</i></p>
@@ -65,7 +65,7 @@
   <!--Expérience professionnelle + langues -->
 
   <div class="col-md-3">
-    <h3 class="small-title">EXPERIENCE PROFESSIONNELLE</h3>
+    <h3 class="small-title">DOMAINES D'EXPERTISE</h3>
     <p class="skills">HTML / CSS</p>
     <div class="bar">
       <%=image_tag("barre 4-5", size: "350x15", alt: '80%') %>
