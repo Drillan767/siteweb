@@ -1,116 +1,126 @@
-<h1>Site en construction</h1>
 
-<div class="cv">
-  <div class="tete">
-    <div class="info">
-      <h1>Joseph Levarato</h1>
-      <p><%= link_to 'jd.levarato@gmail.com', '/contact' %><br />
-      17, Boulevard Yves Farges <br />
-      69007 - Lyon - <%=link_to '06 75 56 62 62','tel:0675566262' %></p>
-    </div>
-    <div class="photo">
-      <div class="pic">
-      <%=image_tag('id', size: '150x137', alt: "Photo d'identité") %>
-      </div>
-    </div>
+  <div class="col-md-5 col-md-offset-2 info">
+    <h1>Joseph Levarato</h1>
+    <p>jd.levarato@gmail.com<br />
+    17, Boulevard Yves Farges - 69007 Lyon <br />
+    06 75 56 62 62</p>
   </div>
-  <div class="titre">
-    <p class="devweb">DEVELOPPEUR WEB</p>
-    <p class="alternance">EN ALTERNANCE</p>
 
+  <div class="col-md-3 photo">
+    <%=image_tag("jo.png", size: "200x150", alt: "Photo de profil")%>
   </div>
-  <div class="corps">
-    <div class="xp">
-      <div class="b-years">
-        <p class="section-title quinze">2015</p>
-        <p class="section-title quatorze">2014</p>
-        <p class="section-title treize">2013</p>
-      </div>
-      <div class="b-content">
-        <p class="section-title">EXPERIENCE PROFESSIONNELLE</p>
-        <p class="content-title">Avril à Juillet <b>- Audience Labs -</b> <i>Intégrateur web</i></p>
-        <p class="content-content">Préparer et envoyer des campagnes e-mailing<br/>
-        S'autoformer et s'adapter aux nouveaux outils et règles<br />
-        Travailler en autonomie</p>
-        <p class="content-title">Janvier <b>- Zabok Project -</b> <i>Projet pédagogique</i></p>
-        <p class="content-content">Développer un module Wordpress à l'aide de jQuery<br/>
+
+  <div class="col-md-8 col-md-offset-2 titre">
+    <h1>Développeur Web en Alternance</h1>
+  </div>
+
+  <div class="col-md-5 col-md-offset-2">
+    <h3 class="small-title">EXPERIENCE PROFESSIONNELLE</h3>
+    <dl class="dl-horizontal">
+      <dt class="year">2015</dt>
+      <dd><p class="topic">Avril à Juillet <b>- Audience Labs -</b> <i>Intégrateur web</i></p>
+        <p>Préparer et envoyer des campagnes e-mailing<br />
+          S'autoformer et s'adapter aux nouveaux outils et règles<br />
+          Travailler en autonomie</p>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt class="year"></dt>
+      <dd><p class="topic">Janvier <b>- Zabok Project -</b> <i>Projet Pédagogique</i></p>
+        <p>Développer un module Wordpress à l'aide de jQuery<br />
           Créer un formulaire permettant la création d'une newsletter<br />
           Travailler en autonomie</p>
-        <p class="content-title">Septembre <b>- GrindHouse Leather -</b> <i>Projet Pédagogique</i></p>
-        <p class="content-content">Créer un site e-commerce professionnel<br/>
+      </dd>
+    </dl>
+    <dl class="dl-horizontal">
+      <dt class="year"></dt>
+      <dd><p class="topic">Septembre <b>- GrindHouse Leather -</b> <i>Projet Pédagogique</i></p>
+        <p>Créer un site e-commerce professionnel<br />
           Manager une équipe de 3 développeurs<br />
           Utiliser Bootstrap pour l'intégration du site</p>
-        <p class="content-title">Avril à Août <b>- UDCCAS 69 -</b> <i>Développeur web</i></p>
-        <p class="content-content">Créer un site en PHP "from scratch"<br/>
+      </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+      <dt class="year">2014</dt>
+      <dd><p class="topic">Avril à Août <b>- UDCCAS 69 -</b> <i>Développeur web</i></p>
+        <p>Créer un site en PHP "from scratch"<br />
           Créer et gérer une base de données<br />
-          Répondre aux besoins du client<br/>
+          Répondre aux besoins du client<br />
           Travailler selon les délais impartis</p>
-        <p class="content-title">Septembre<b>- ViaMontagne -</b> <i>Projet Pédagogique</i></p>
-        <p class="content-content">Etablir une communication entre le client et l'équipe<br/>
+      </dd>
+    </dl>
+    <dl class="dl-horizontal">
+      <dt class="year">2013</dt>
+      <dd><p class="topic">Septembre <b>- UDCCAS 69 -</b> <i>Projet Pédagogique</i></p>
+        <p>Etablir une communication entre le client et l'équipe<br />
           Créer un site en PHP avec une base de données<br />
-          Ajouter des animations à l'aide de jQuery</p>
-        <div style="height: 13px;"></div>
-      </div>
-    </div>
-    <div class="skills">
-      <p class="section-title">DOMAINES<br />D'EXPERTISE</p>
-      <p class="xp-content">HTML / CSS</p>
-      <div class="barres">
-        <%=image_tag('barre 4-5', size: '235x10', alt: '80%') %>
-      </div>
-      <p class="xp-content">PHP / MySQL</p>
-      <div class="barres">
-        <%=image_tag('barre 3-5', size: '235x10', alt: '60%') %>
-      </div>
-      <p class="xp-content">Javascript / jQuery</p>
-      <div class="barres">
-        <%=image_tag('barre 3-5', size: '235x10', alt: '60%') %>
-      </div>
-      <p class="xp-content">Ruby / Ruby on Rails</p>
-      <div class="barres">
-        <%=image_tag('barre 3-5', size: '235x10', alt: '60%') %>
-      </div>
-      <p class="xp-content">AngularJS</p>
-      <div class="barres">
-        <%=image_tag('barre 2-5', size: '235x10', alt: '40%') %>
-      </div>
-      <br/>
-      <div class="languages">
-        <p class="xp-content">Anglais</p>
-        <p class="lang-level">Niveau C1 + Professionnel</p>
-        <p class="xp-content">Allemand</p>
-        <p class="lang-level">Niveau B1</p>
-      </div>
-      <div style="height: 10px;"></div>
+          Ajouter des animations à l'aide de jQuery
+        </p>
+      </dd>
+    </dl>
+  </div>
+
+  <!--Expérience professionnelle + langues -->
+
+  <div class="col-md-3">
+    <h3 class="small-title">EXPERIENCE PROFESSIONNELLE</h3>
+    <p class="skills">HTML / CSS</p>
+    <div class="bar">
+      <%=image_tag("barre 4-5", size: "350x15", alt: '80%') %>
     </div>
 
+    <p class="skills">PHP / MySQL</p>
+    <div class="bar">
+      <%=image_tag("barre 3-5", size: "350x15", alt: '60%') %>
     </div>
-    <div class="pied">
-      <div class="training">
-        <p class="section-title">FORMATION</p>
-        <div class="f-years">
-          <p>2014-2017 - </p>
-          <p style="margin-top: 30px;">2012-2014 - </p>
-          <p>2011-2012 - </p>
-          <p>2011 - </p>
-        </div>
-        <div class="f-content">
-          <p>Formation au titre de chef de projet SI en <br />
-          alternance - Titre RNCP de niveau I (bac +5)</p>
-          <p>Prépa à l'Institut G4</p>
-          <p>Brevet d'Aptitude aux Fonctions d'Animateur (BAFA)</p>
-          <p>Obtention du baccalauréat littéraire</p>
-        </div>
-      </div>
-      <div class="apt">
-        <p class="section-title">APTITUDES</p>
-        <p class="xp-content">Auto-formation</p>
-        <p class="xp-content">Travail en équipe</p>
-        <p class="xp-content">Veille technologique</p>
-      </div>
+
+    <p class="skills">Javascript / JQuery</p>
+    <div class="bar">
+      <%=image_tag("barre 3-5", size: "350x15", alt: '60%') %>
     </div>
-</div>
-<br clear="all" />
-<div class="details">
-  <p>CV mis à jour le 24/01/2016.</p>
-</div>
+    <p class="skills">Ruby / Ruby on Rails</p>
+    <div class="bar">
+      <%=image_tag("barre 3-5", size: "350x15", alt: '60%') %>
+    </div>
+    <p class="skills">AngularJS</p>
+    <div class="bar">
+      <%=image_tag("barre 2-5", size: "350x15", alt: '40%') %>
+    </div>
+    <p class="lang">Anglais</p>
+    <p class="level">Niveau C1 + Professionel</p>
+    <p class="lang">Allemand</p>
+    <p class="level">Niveau B1</p>
+  </div>
+
+  <div class="col-md-5 col-md-offset-2">
+    <h3 class="small-title">FORMATION</h3>
+    <dl class="dl-horizontal">
+      <dt class="year">2014-2017</dt>
+      <dd>Formation au titre de chef de projet SI en<br />
+        alternance - Titre RNCP de niveau I (bac +5)
+      </dd>
+    </dl>
+    <dl class="dl-horizontal">
+      <dt class="year">2012-2014</dt>
+      <dd>Prépa à l'Institut G4
+      </dd>
+    </dl>
+    <dl class="dl-horizontal">
+      <dt class="year">2011-2012</dt>
+      <dd>Brevet d'Aptitude aux Fonctions d'Animateur (BAFA)
+      </dd>
+    </dl>
+    <dl class="dl-horizontal">
+      <dt class="year">2011</dt>
+      <dd>Obtention du baccalauréat littéraire
+      </dd>
+    </dl>
+  </div>
+  <div class="col-md-3">
+    <h3 class="small-title">APTITUDE</h3>
+    <p class="skills">Auto-formation</p>
+    <p class="skills">Travail en équipe</p>
+    <p class="skills">Veille technologique</p>
+  </div>

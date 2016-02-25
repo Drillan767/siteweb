@@ -1,9 +1,8 @@
-.cv{
+.container{
     background-color: #fff !important;
     width:900px !important;
     min-width: 480px !important;
     margin:auto !important;
-    border: solid 1px #000 !important;
     padding: 50px 40px 40px 50px !important;
     font-family: Calibri, Arial;
 }
@@ -16,27 +15,24 @@
 /*Partie Head du CV */
 
 .tete{
-    width:100%;
     height:150px;
+}
 
+.photo_identite{
+    width: 150px;
+    height: 137px;
 }
 
 .info{
     height:150px;
-    width:67%;
-    float: left;
-    border-style: hidden hidden solid hidden;
 }
+
 .info h1{
     font-variant: small-caps;
 }
 
 .photo{
     height:150px;
-    width:33%;
-    float: right;
-    margin-left:-3px;
-    border-style: hidden hidden solid solid;
 }
 
 .pic{
@@ -48,7 +44,6 @@
 .titre{
     width:100%;
     height: 120px;
-    border-style: hidden  hidden solid hidden;
 }
 
 .devweb{
@@ -76,7 +71,7 @@
     float: left;
     min-height:200px;
     width:67%;
-    border-style: hidden  hidden solid hidden;
+
 }
 
 .lang-level{
@@ -116,7 +111,7 @@
     margin-left:-3px;
     width: 33%;
     min-height: 200px;
-    border-style: hidden  hidden solid solid;
+
 }
 
 .xp-content{
@@ -126,6 +121,11 @@
 
 .barres{
     margin:-13px 0 4px 29px;
+}
+
+.barrexp{
+    width: 235px;
+    height: 10px;
 }
 
 .languages{
@@ -164,7 +164,6 @@
     margin-left:-3px;
     min-height: 200px;
     width: 33%;
-    border-style: hidden hidden hidden solid;
 }
 
 .details{
