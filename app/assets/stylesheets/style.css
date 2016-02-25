@@ -1,0 +1,173 @@
+body{
+	background-color: #696969;
+}
+
+h1{
+    font-variant: small-caps;
+    font-family: Montserrat;
+}
+
+.link{
+	color: #969696;
+}
+
+.link-red{
+    color: #BD0C00;
+}
+
+.link-footer{
+    color: #fff;
+}
+.link-footer:hover{
+    color: #fff;
+    font-weight: bold;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #969696;
+}
+
+dt{
+    font-size: 20px;
+}
+
+.container{
+	background-color: transparent;
+	margin-top: 50px;
+	width: 80% !important;
+
+}
+
+.header{
+	background-color: white;
+	border-radius: 20px 20px 0 0;
+}
+
+.logo{
+	margin: 10px 0 0 10px;
+}
+
+
+
+.nav{
+	background-color: #fff;
+}
+
+.navbar{
+	float: right;
+	color: #777777;
+}
+
+ul{
+	list-style: none;
+}
+
+.dropdown{
+	display: block;
+	float: right;
+	margin: 5px;
+    color: #fff !important;
+}
+
+.dropdown{
+	
+	border-radius: 10px;
+	margin: 2px;
+}
+
+.dropdown:hover{
+	background-color: #EBEBEB;
+}
+
+.active{
+
+	background-color: #BD0C00 !important;
+	border-radius: 10px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover{
+	background-color: #BD0C00;
+}
+
+
+
+/* body */
+
+.body{
+	min-height: 100px;
+	background-color: white;
+    padding-bottom: 75px;
+}
+
+.info{
+    height: 150px;
+}
+
+.photo{
+    height: 150px;
+}
+
+.titre{
+    padding: 25px 0;
+}
+
+.titre h1{
+    font-size: 49px;
+    text-align: center;
+}
+
+.photo img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.topic{
+    font-size: 18px;
+}
+
+.small-title{
+    text-align: center;
+    font-family: Montserrat;
+    margin-bottom: 45px;
+}
+
+.skills{
+    text-align: center;
+    font-size: 17px;
+    margin: 30px 0 15px 0;
+}
+
+.bar img{
+    display:block;
+    margin: 0 auto;
+}
+
+.lang{
+    text-align: center;
+    margin-top:50px;
+    font-size: 17px;
+}
+
+.level{
+    font-size: 14px;
+    text-align: center;
+}
+/* footer */
+
+.footer{
+	background-color: #BD0C00;
+	border-radius: 0 0 20px 20px;
+	padding: 40px;
+	color: #fff;
+}
+
+.details{
+    list-style: none;
+}
+
+.details li ul a{
+    color: #fff;
+}
+
