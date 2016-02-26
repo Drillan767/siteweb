@@ -172,3 +172,6 @@ ul{
     color: #fff;
 }
 
+.nifty_form input:focus{
+    border:1px solid red;
+}

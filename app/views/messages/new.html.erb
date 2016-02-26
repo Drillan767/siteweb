@@ -1,39 +1,51 @@
-<%= form_for @message do |f| %>
-    <% if @message.errors.any? %>
-        <div id="error_explanation">
-          <h2>
-            <%= "#{pluralize(@message.errors.count, "error")} prohibited this message from being sent:" %>
-          </h2>
+<%= form_for @message, html: {class: "form-horizontal"} do |f| %>
+      <% if @message.errors.any? %>
+          <div id="error_explanation">
+            <h2>
+              <%= "#{pluralize(@message.errors.count, "error")} prohibited this message from being sent:" %>
+            </h2>
 
-          <ul>
-            <% @message.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
+            <ul>
+              <% @message.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+  <fieldset>
+      <div class="form-group">
+        <%= f.label :name, class: 'col-md-4 control-label' %>
+        <div class="col-md-4">
+          <%= f.text_field :name, class: 'form-control input-md', id: 'textinput' %>
         </div>
-    <% end %>
+      </div>
 
-    <div class="field">
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-    </div>
+      <div class="form-group">
+        <%= f.label :email, class: 'col-md-4 control-label' %>
+        <div class="col-md-4">
+          <%= f.email_field :email, class: 'form-control input-md' %>
+        </div>
+      </div>
 
-    <div class="field">
-      <%= f.label :email %>
-      <%= f.email_field :email %>
-    </div>
+      <div class="form-group">
+        <%= f.label :subject, class: 'col-md-4 control-label' %>
+        <div class="col-md-4">
+          <%= f.text_field :subject, class: 'form-control input-md' %>
+        </div>
+      </div>
 
-    <div class="field">
-      <%= f.label :subject %>
-      <%= f.text_field :subject %>
-    </div>
+      <div class="form-group">
+        <%= f.label :content, class: 'col-md-4 control-label' %>
+        <div class="col-md-4">
+          <%= f.text_area :content, class: 'form-control input-md' %>
+        </div>
+      </div>
 
-    <div class="field">
-      <%= f.label :content %>
-      <%= f.text_area :content %>
-    </div>
-
-    <div class="actions">
-      <%= f.submit 'Send', class: 'button' %>
-    </div>
+      <div class="form-group">
+        <div class="col-md-4 col-md-offset-4">
+          <%= f.submit 'Envoyer', class: 'btn btn-danger' %>
+        </div>
+      </div>
+  </fieldset>
 <% end %>
