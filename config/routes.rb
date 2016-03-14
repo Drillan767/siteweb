@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :contacts, only: [:new, :create]
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users
+  resources :messages, only: [:new, :create]
 
   root :to => 'pages#accueil', :via => [:get, :post]
   match '/todo', :to => 'pages#todo', :via => [:get, :post]
   match '/about', :to => 'pages#about',   :via => [:get, :post]
- # match '/contact', :to => 'contacts#create', :via => :get
+  match '/testadmin', :to => 'testadmin#index', :via => [:get, :post]
 
 end
