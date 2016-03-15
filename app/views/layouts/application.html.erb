@@ -29,11 +29,6 @@
         <div class="logo">
           <%= link_to image_tag("jl"), "/"%>
           <%= link_to("Joseph Levarato", "/", class: 'link')%>
-          <%if current_user %>
-              <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-          <% else %>
-            <%= link_to "Connexion", new_user_session_path %>
-          <% end %>
         </div>
       </div>
 
@@ -53,6 +48,13 @@
 
     <!-- contenu-->
     <div class="row body">
+
+      <% if flash[:success] %>
+          <div class="alert alert-success"><%= flash[:success] %></div>
+      <% end %>
+
+
+
       <%=yield %>
     </div>
 
@@ -60,7 +62,7 @@
     <div class="row footer">
       <div class="col-md-4 ">
         <h2>Le site</h2>
-        <p>Ce site internet a été réalisé grâce à Ruby v. 2.1.3 et Ruby on Rails v.4.2.5. Ce site a vocation d'être une sandbox
+        <p>Ce site internet a été réalisé grâce à Ruby v. 2.2.3 et Ruby on Rails v.4.2.5. Ce site a vocation d'être une sandbox
         afin que je puisse moi-même me perfectionner sur ce langage possédant un potentiel immense. D'autres pages (comme la partie contact)
         ne fonctionnent pas encore, mais ce problème est déjà en cours de résolution.</p>
       </div>
