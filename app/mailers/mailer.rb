@@ -1,5 +1,5 @@
 class Mailer < ActionMailer::Base
-  default from: 'jd.levarato@gmail.com'
+  default from: 'contact@siteweb.fr'
   layout 'mailer'
 
   def contact_form(contact)

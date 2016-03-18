@@ -39,7 +39,7 @@
           <ul class="nav nav-pills navbar-justified">
             <li class="dropdown"><%=link_to("Accueil", "/", class: 'link')%></li>
             <li class="dropdown"><%=link_to("À propos", "/about", class: 'link')%></li>
-            <li class="dropdown disabled"><%=link_to("Contact", "#", class: 'link')%></li>
+            <li class="dropdown"><%=link_to("Contact", "#", class: 'link')%></li>
             <li class="dropdown"><%=link_to("CV", "CVJosephLevarato.pdf", target: '_blank', class: 'link')%></li>
           </ul>
         </div>
@@ -63,14 +63,14 @@
       <div class="col-md-4 ">
         <h2>Le site</h2>
         <p>Ce site internet a été réalisé grâce à Ruby v. 2.2.3 et Ruby on Rails v.4.2.5. Ce site a vocation d'être une sandbox
-        afin que je puisse moi-même me perfectionner sur ce langage possédant un potentiel immense. D'autres pages (comme la partie contact)
-        ne fonctionnent pas encore, mais ce problème est déjà en cours de résolution.</p>
+        afin que je puisse moi-même me perfectionner sur ce langage possédant un potentiel immense.</p>
       </div>
       <div class="col-md-4">
         <h2>Information</h2>
         <p>17, Boulevard Yves Farges<br/>
         69007 - Lyon <br />
         06 75 56 62 62<br/>
+        N° SIRET : 818 885 907 00019<br />
         <%=link_to("jd.levarato@gmail.com", "mailto:jd.levarato@gmail.com", class: 'link-footer')%></p>
 
       </div>
@@ -80,8 +80,7 @@
           <li><%=link_to("Accueil", "/", class: 'link-footer')%></li>
           <li><%=link_to("À propos", "/about", class: 'link-footer')%></li>
           <li><%=link_to("CV", "CVJosephLevarato.pdf", target: '_blank', class: 'link-footer')%></li>
-          <li><%=link_to("Contact", "#", class: 'link-footer')%></li>
-          <!-- <%=link_to("Contact - non disponible", "/contact", class: 'link-footer')%> || lien contact-->
+          <li><%=link_to("Contact", "/contact", class: 'link-footer')%></li>
         </ul>
       </div>
     </div> <!-- /container -->
