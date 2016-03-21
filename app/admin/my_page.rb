@@ -1,5 +1,5 @@
-ActiveAdmin.register_page "My Page" do
+ActiveAdmin.register_page "my page" do
   content do
-    render :partial => 'about'
+    para "Ouais bonjour"
   end
 end
