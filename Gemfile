@@ -40,5 +40,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
-gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
-gem 'rails_admin'
+gem 'simple_form'
+gem 'mail'
+
+gem 'activeadmin', github: 'activeadmin'
+gem 'formtastic', '~> 3.1', '>= 3.1.3'
+gem 'bcrypt-ruby', :require => 'bcrypt'
