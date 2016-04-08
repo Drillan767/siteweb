@@ -1,5 +1,10 @@
 fr:
   active_admin:
+    time:
+      formats:
+        default: "%d/%m/%Y"
+        short: "%d %b"
+        long: "%d %B %Y"
     dashboard: "Tableau de bord"
     dashboard_welcome:
       welcome: "Bienvenue dans Active Admin. Ceci est la page par défaut."
@@ -117,3 +122,8 @@ fr:
       block: "Liste"
       grid: "Grille"
       blog: "Blog"
+  time:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
