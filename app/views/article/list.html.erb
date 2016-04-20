@@ -4,7 +4,7 @@
 
     <h3><%=p.titre %></h3>
 
-    <p><%=p.contenu%></p>
+    <p><%=strip_tags(p.contenu) %></p>
 
     <%=link_to('Lire la suite', p) %>
 

@@ -8,4 +8,9 @@ class ArticleController < ApplicationController
     @post = Article.find(params[:id])
     @titre = @post.titre
   end
+
+  private
+  def article_params_params
+    params.require(:article).permit(:titre, :contenu, :image)
+  end
 end

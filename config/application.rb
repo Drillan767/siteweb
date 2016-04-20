@@ -11,6 +11,6 @@ module Siteweb
     config.active_record.raise_in_transactional_callbacks = true
     # I recommend using this line to show error
     config.action_mailer.raise_delivery_errors = true
-
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
   end
 end

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
   resources :article
 
   root :to => 'pages#accueil', :via => [:get, :post]

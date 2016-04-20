@@ -24,4 +24,6 @@ Rails.application.configure do
       :authentication       => :login,
       :enable_starttls_auto => true
   }
+
+  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
 end

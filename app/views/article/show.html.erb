@@ -1,3 +1,5 @@
 <h3><%=@post.titre %></h3>
 
-<p><%=@post.contenu %></p>
+<p><%=@post.contenu.html_safe %></p>
+
+<%= image_tag(@post.image.url(:medium)) %>
