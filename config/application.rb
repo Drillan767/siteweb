@@ -12,5 +12,8 @@ module Siteweb
     # I recommend using this line to show error
     config.action_mailer.raise_delivery_errors = true
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
+    config.entities_greek = false
+    config.entities_latin = false
+    config.entities_processNumerical = false
   end
 end
